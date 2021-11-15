@@ -1,3 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Condensed:wght@300&family=Roboto:wght@400;700;900&display=swap');
+
+:root{
+    --color-primary: #00984a;
+    --color-buttom: #d4db26;
+    --color-font-title: #004a34;
+}
+/*----------------------HEADER---------------------------*/
 .nav-footer{
-    display: flex;
+    background-color: var(--color-primary);
+    align-items: center;
+    display: grid;
+    grid-column-gap: 12px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 120px 1fr 65px;
+    height: 56px;
+}
+
+.--nav_logo_img{
+    width: 130px;
+    height: 23px;
+    object-fit: cover;
+}
+
+.--nav_icons{
+    text-align: right;
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-buttom);
+    font-weight: bold;
+}
+
+.--nav_menu_hamburguer{
+    margin-right: 15px;
+}
+/*----------------------HEADER---------------------------*/
+
+.--main_titulo{
+    align-items: center;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 25px;
+    justify-items: left;
+}
+
+.--main-titulo-h1{
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-font-title);
+    font-size: 32px;
+    margin-top: 20px;
 }
