@@ -57,15 +57,22 @@
 
 .card_p{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card_veiculo{
     width: var(--card__widht);
     height: var(--card__height);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .card_titulo{
     margin: 0px 0px 16px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .card-model{
@@ -80,6 +87,26 @@
     color: var(--color-legenda);
 }
 
+.card_button_reservation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: var(--card_button_reservation--widht);
+    height: var(--card_button_reservation--height);
+    background-color: var(--color-buttom);
+    color: var(--color-font-title);
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.rafael{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 :root{
     --color-primary: #00984a;
     --color-buttom: #d4db26;
@@ -89,4 +116,6 @@
     --img__height: 180px;
     --card__widht: 330px;
     --card__height: 489px;
+    --card_button_reservation--widht: 298px;
+    --card_button_reservation--height: 45px;
 }
