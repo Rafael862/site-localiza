@@ -17,13 +17,13 @@
                             <!----------------------HEADER--------------------------->
     <header>
         <nav>
-            <div class="nav-footer menu-nav">
-                <div class="nav-logo"><img class="--nav_logo_img" src="media/logo-localizasf.png" alt="logo-localiza"></div>
-                <div class="--nav_icon_login --nav_icons">
+            <div class="nav_footer menu-nav">
+                <div class="nav-logo"><img class="nav_logo_img" src="media/logo-localizasf.png" alt="logo-localiza"></div>
+                <div class="nav_icon_login nav_icons">
                     <i class="far fa-user"></i>
                     LOGIN
                 </div>
-                <div class="--nav_menu_hamburguer --nav_icons">
+                <div class="nav_menu_hamburguer nav_icons">
                     <i class="fa fa-bars fa-2x" aria-hidden="true" ></i>
                 </div>
             </div>
@@ -32,28 +32,44 @@
     </header>
                             <!----------------------HEADER--------------------------->
 <main>
-    <div class="--main_titulo_geral">
-        <div class="--main_titulo">
-            <h1 class="--main-titulo-h1">Grupo de Carros</h1>
-            <div class="titulo-descritivo">Mostrando a frota para: <select name="Brasil" id="--select_brasil">BRASIL</select></div>
+    <div class="main_titulo_geral">
+        <div class="main_titulo">
+            <h1 class="main-titulo-h1">Grupo de Carros</h1>
+            <div class="titulo-descritivo">Mostrando a frota para: <select name="Brasil" id="select_brasil">BRASIL</select></div>
         </div>
     </div>
 
-    <div class="card-veiculo card-grid">
+    <div class="card_veiculo card-grid">
 
-        <div>
-            <div class="card-titulo">grupo A</div>
+        <div class="card_veiculo">
+            <div class="card_titulo">Grupo A - Compacto (ECMN)</div>
                  <section>
                      <article>
-                         <img src="" alt="">
-                         <p>carro tal</p>
+                         <img class="card_imagem" src="media/carros/uno-original.jpg" alt="">
+                         <p class="card_p">Fiat Uno 1.0</p>
                      </article>
                 </section>
-            <div class="card-model">modelo do veículo</div>
-            <div>reserva garante um dos modelos</div>
-            <div>sujeito a mudanças de acordo com a disponibilidade</div>
+            <div class="card-model card_legenda">Veículo similar a: Fiat Uno 1.0, dentre outros.</div>
+            <div class="card_legenda card_legenda_color">Sua reserva garante um dos carros desse grupo.</div>
+            <div class="card_legenda card_legenda_color"> Modelo sujeito à disponibilidade da agência.</div>
+            
+            <div class="card_legenda"><button class="card-button-reservation">RESERVE AGORA</button></div>
+        </div>
+
+
+        <div class="card_veiculo">
+            <div class="card_titulo">Grupo A - Compacto (ECMN)</div>
+                 <section>
+                     <article>
+                         <img class="card_imagem" src="media/carros/uno-original.jpg" alt="">
+                         <p class="card_p">Fiat Uno 1.0</p>
+                     </article>
+                </section>
+            <div class="card-model">Veículo similar a: Fiat Uno 1.0, dentre outros.</div>
+            <div>Sua reserva garante um dos carros desse grupo.</div>
+            <div> Modelo sujeito à disponibilidade da agência.</div>
             <div></div>
-            <button class="card-button-reservation">reserve agora</button>
+            <button class="card-button-reservation">RESERVE AGORA</button>
         </div>
 
     </div>

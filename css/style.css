@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Condensed:wght@300&family=Roboto:wght@400;700;900&display=swap');
 
-:root{
-    --color-primary: #00984a;
-    --color-buttom: #d4db26;
-    --color-font-title: #004a34;
-}
+
 /*----------------------HEADER---------------------------*/
-.nav-footer{
+.nav_footer{
     background-color: var(--color-primary);
     align-items: center;
     display: grid;
@@ -17,25 +13,26 @@
     height: 56px;
 }
 
-.--nav_logo_img{
+.nav_logo_img{
     width: 130px;
     height: 23px;
     object-fit: cover;
 }
 
-.--nav_icons{
+.nav_icons{
     text-align: right;
     font-family: 'Nunito', sans-serif;
     color: var(--color-buttom);
     font-weight: bold;
 }
 
-.--nav_menu_hamburguer{
+.nav_menu_hamburguer{
     margin-right: 15px;
+    color: var(--color-buttom);
 }
 /*----------------------HEADER---------------------------*/
 
-.--main_titulo{
+.main_titulo{
     align-items: center;
     display: grid;
     grid-column: 1/2;
@@ -45,9 +42,51 @@
     justify-items: left;
 }
 
-.--main-titulo-h1{
+.main-titulo-h1{
     font-family: 'Roboto', sans-serif;
     color: var(--color-font-title);
     font-size: 32px;
     margin-top: 20px;
+}
+
+.card_imagem{
+    width: var(--img__widht);
+    height: var(--img__height);
+    object-fit: cover;
+}
+
+.card_p{
+    text-align: center;
+}
+
+.card_veiculo{
+    width: var(--card__widht);
+    height: var(--card__height);
+}
+
+.card_titulo{
+    margin: 0px 0px 16px;
+}
+
+.card-model{
+    margin: 8px 0px 0px;
+}
+
+.card_legenda{
+    text-align: center;
+}
+
+.card_legenda_color{
+    color: var(--color-legenda);
+}
+
+:root{
+    --color-primary: #00984a;
+    --color-buttom: #d4db26;
+    --color-font-title: #004a34;
+    --color-legenda: #6d7278;
+    --img__widht: 298px;
+    --img__height: 180px;
+    --card__widht: 330px;
+    --card__height: 489px;
 }
