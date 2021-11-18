@@ -66,6 +66,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    background-color: white;
 }
 
 .card_titulo{
@@ -88,25 +89,23 @@
 }
 
 .card_button_reservation {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
     width: var(--card_button_reservation--widht);
     height: var(--card_button_reservation--height);
     background-color: var(--color-buttom);
     color: var(--color-font-title);
     border-radius: 5px;
     border: none;
+}
+
+.card-grid {
+    margin: auto;
+}
+
+body {
+    background-color: #ebebeb;
     
 }
 
-.rafael{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 :root{
     --color-primary: #00984a;
     --color-buttom: #d4db26;
@@ -114,7 +113,7 @@
     --color-legenda: #6d7278;
     --img__widht: 298px;
     --img__height: 180px;
-    --card__widht: 330px;
+    --card__widht: 315px;
     --card__height: 489px;
     --card_button_reservation--widht: 298px;
     --card_button_reservation--height: 45px;
