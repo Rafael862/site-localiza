@@ -30,8 +30,16 @@
     margin-right: 15px;
     color: var(--color-buttom);
 }
-/*----------------------HEADER---------------------------*/
+/*----------------------HEADER---------------------------*/ 
 
+.mais_detalhes_button{
+    display: flex;
+    border: 1px solid #d7d7d7;
+    justify-content: space-between;
+    color: var(--color-primary);
+    cursor: pointer;
+    padding: 0px 10px;
+}
 .main_titulo{
     align-items: center;
     display: grid;
