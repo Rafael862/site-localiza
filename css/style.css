@@ -4,6 +4,7 @@
 
 /*----------------------HEADER---------------------------*/
 .nav_footer{
+    position: fixed;
     background-color: var(--color-primary);
     align-items: center;
     display: grid;
@@ -11,7 +12,11 @@
     grid-template-rows: 1fr;
     grid-template-columns: 120px 1fr 65px;
     height: 56px;
+    top: 0;
+    width: 100vw;
+    
 }
+
 
 .nav_logo_img{
     width: 130px;
@@ -34,11 +39,20 @@
 
 .mais_detalhes_button{
     display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 298px;
+    height: 38px;
     border: 1px solid #d7d7d7;
     justify-content: space-between;
     color: var(--color-primary);
     cursor: pointer;
     padding: 0px 10px;
+}
+.mais_detalhes{
+    margin: 0px 10px;
+
 }
 .main_titulo{
     align-items: center;
@@ -49,15 +63,29 @@
     grid-template-rows: 40px 25px;
     justify-items: left;
 }
+.card_legenda2{
+    margin-bottom: 18px;
+}
+.card_legenda1{
+    margin-top: 12px;
+}
 
 .main-titulo-h1{
     font-family: 'Roboto', sans-serif;
     color: var(--color-font-title);
     font-size: 32px;
-    margin-top: 20px;
+    margin-top: 45px;
+    margin-bottom: 35px;
 }
 
+.titulo-descritivo{
+    margin-top: 15px;
+}
+.card_article{
+    text-align: center;
+}
 .card_imagem{
+    
     width: var(--img__widht);
     height: var(--img__height);
     object-fit: cover;
@@ -66,37 +94,39 @@
 .card_p{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
 }
 
 .card_veiculo{
     width: var(--card__widht);
     height: var(--card__height);
-    align-items: center;
-    text-align: center;
-    justify-content: center;
     background-color: white;
+    border-radius: 6px;
+    
 }
 
 .card_titulo{
-    margin: 0px 0px 16px;
+    margin-bottom: 16px;
     justify-content: center;
     text-align: center;
     align-items: center;
 }
 
 .card-model{
-    margin: 8px 0px 0px;
+    margin-top: 8px;
 }
 
 .card_legenda{
     text-align: center;
+    width: 298px;
+    font-size: 12px;
 }
 
 .card_legenda_color{
     color: var(--color-legenda);
 }
 
-.card_button_reservation {
+.card_button_reservation{
     width: var(--card_button_reservation--widht);
     height: var(--card_button_reservation--height);
     background-color: var(--color-buttom);
@@ -104,13 +134,23 @@
     border-radius: 5px;
     border: none;
 }
+.card_button{
+    text-align: center;
+    margin-top: 11px;
+}
 
 .card-grid {
-    margin: auto;
+    margin-top: 5%;
+}
+main{
+    margin-top: 75px;
+    max-width: 1024px;
 }
 
 body {
     background-color: #ebebeb;
+    max-width: 1024px;
+    
     
 }
 
@@ -125,4 +165,8 @@ body {
     --card__height: 489px;
     --card_button_reservation--widht: 298px;
     --card_button_reservation--height: 45px;
+}
+
+*{
+    box-sizing: border-box;
 }
