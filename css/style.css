@@ -1,19 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Condensed:wght@300&family=Roboto:wght@400;700;900&display=swap');
 
+:root{
+    --color-primary: #00984a;
+    --color-buttom: #d4db26;
+    --color-font-title: #004a34;
+    --color-legenda: #6d7278;
+    --img__widht: 298px;
+    --img__height: 180px;
+    --card__widht: 315px;
+    --card__height: 489px;
+    --card_button_reservation--widht: 298px;
+    --card_button_reservation--height: 45px;
+}
 
 /*----------------------HEADER---------------------------*/
-.nav_footer{
+.nav_header{
     position: fixed;
     background-color: var(--color-primary);
     align-items: center;
-    display: grid;
-    grid-column-gap: 12px;
-    grid-template-rows: 1fr;
-    grid-template-columns: 120px 1fr 65px;
+    display: flex;
+    justify-content: space-between;
     height: 56px;
     top: 0;
-    width: 100vw;
+    width: 100%;
     
 }
 
@@ -98,7 +108,8 @@
 }
 
 .card_veiculo{
-    width: var(--card__widht);
+    padding: 20px 10px;
+    max-width: var(--card__widht);
     height: var(--card__height);
     background-color: white;
     border-radius: 6px;
@@ -141,8 +152,10 @@
 
 .card-grid {
     margin-top: 5%;
+    
 }
 main{
+    padding: 16px;
     margin-top: 75px;
     max-width: 1024px;
 }
@@ -154,30 +167,27 @@ body {
     
 }
 
-:root{
-    --color-primary: #00984a;
-    --color-buttom: #d4db26;
-    --color-font-title: #004a34;
-    --color-legenda: #6d7278;
-    --img__widht: 298px;
-    --img__height: 180px;
-    --card__widht: 315px;
-    --card__height: 489px;
-    --card_button_reservation--widht: 298px;
-    --card_button_reservation--height: 45px;
-}
+
 
 *{
     box-sizing: border-box;
 }
 
+.section-centralizadora{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+.grid-body{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px 0;
 
-@media (min-width: 768px) {
+
+}
+@media (min-width: 769px) {
     .grid-body{
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        grid-gap: 15px;
-
     }
 }
