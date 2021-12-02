@@ -44,6 +44,10 @@
 .nav_menu_hamburguer{
     margin-right: 15px;
     color: var(--color-buttom);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 /*----------------------HEADER---------------------------*/ 
 
@@ -110,7 +114,6 @@
 .card_veiculo{
     padding: 20px 10px;
     max-width: var(--card__widht);
-    height: var(--card__height);
     background-color: white;
     border-radius: 6px;
     
@@ -150,21 +153,16 @@
     margin-top: 11px;
 }
 
-.card-grid {
-    margin-top: 5%;
-    
-}
 main{
     padding: 16px;
-    margin-top: 75px;
+    margin-top: 45px;
     max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
     background-color: #ebebeb;
-    max-width: 1024px;
-    
-    
 }
 
 
@@ -180,14 +178,23 @@ body {
     padding: 6px;
 }
 .grid-body{
+   display: block;
+}
+.login{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+@media (min-width: 768px) {
+    .grid-body{
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 5px 0;
-
-
+    grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media (min-width: 769px) {
     .grid-body{
-        grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px 0;
     }
 }
+
