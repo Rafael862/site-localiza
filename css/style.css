@@ -62,12 +62,26 @@
     background-color: #52d58e;
 }
 
+.botao-direito1{
+    display: grid;
+    justify-content: space-between;
+}
+
 .menu2-meio{
     background-color: var(--color-primary);
     height: 85px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-column-gap: 12px;
+}
+
+
+.botoes-meio{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    
 }
 
 .header-menu3{
@@ -79,9 +93,12 @@
 }
 
 .menu3-baixo{
+    display: block;
     text-align: center;
     margin-top: auto;  
-    margin-bottom: auto;  
+    margin-bottom: auto;
+    
+    
     
     
 }
