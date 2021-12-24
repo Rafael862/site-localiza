@@ -23,13 +23,15 @@
   border-radius: 5px;
 }
 
+
 .menu1-topo {
   display: flex;
   width: 100%;
   height: 32px;
   color: white;
-  
 }
+
+
 
 .botao-topo {
   display: inline-block;
