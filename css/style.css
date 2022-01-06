@@ -38,7 +38,9 @@
   height: 32px;
   width: 197px;
   text-align: center;
-  padding-top: 5px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8.5px;
   text-transform: uppercase;
   font-size: 12px;
   
@@ -128,10 +130,22 @@ img.nav_logo_img{
 }
 
 .menu3-baixo {
-  display: block;
+  display: flex;
   text-align: center;
+  margin: auto;
+  justify-content: space-between;
+
+}
+
+.input{
+  margin: 5px;
+}
+
+.menu3-baixo2{
+  display: flex;
   margin-top: auto;
   margin-bottom: auto;
+  color: white;
 }
 
 .input1 {
@@ -165,8 +179,40 @@ img.nav_logo_img{
 }
 
 .menu-login{
+  display: grid;
+  row-gap: 12px;
   margin: auto;
 }
+
+.login-minhasreservas{
+  align-items: center;
+    display: grid;
+    grid-column: 1/2;
+    grid-gap: 12px;
+    grid-template-columns: 30px 1fr;
+    color: var(--color-buttom);
+}
+
+.login-login{
+  align-items: center;
+    display: grid;
+    grid-column: 1/2;
+    grid-gap: 12px;
+    grid-template-columns: 30px 1fr;
+    color: var(--color-buttom);
+}
+
+#cor-login{
+  color: var(--color-buttom);
+}
+
+span.login{
+  text-align: left;
+  
+  color: var(--color-buttom);
+  
+}
+
 .nav_logo_img {
   width: 130px;
   height: 23px;
@@ -187,6 +233,8 @@ img.nav_logo_img{
   justify-content: center;
   align-items: center;
 }
+
+
 /*----------------------HEADER---------------------------*/
 
 .mais_detalhes_button {
